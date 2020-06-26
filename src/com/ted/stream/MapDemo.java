@@ -17,6 +17,8 @@ public class MapDemo {
 
 
         alpha.stream().mapToInt(s->s.length()).forEach(System.out::println);
+
+
     }
 
     private static void noMap(List<String> alpha) {
@@ -26,6 +28,9 @@ public class MapDemo {
         }
         System.out.println(alphaUpper);
     }
+
+
+
 }
 
 

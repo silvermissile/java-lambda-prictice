@@ -33,6 +33,9 @@ public class StreamFilterPredicate {
 
         System.out.println(filtered);
 
+
+        // 多个谓词，可以执行布尔运算
+
         System.out.println(employees.stream().filter(ageGreaterThan70.or(genderM)).collect(Collectors.toList()));
 
         System.out.println(employees.stream().filter(ageGreaterThan70.negate()).collect(Collectors.toList()));
